@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="xanh">#2196F3</color>
+    <color name="gray">#CCC</color>
+    <color name="hong">#FF4B88</color>
+    <color name="nen_chinh">#9AD2FF</color>
+    <color name="xanhla">#C411D854</color>
+    <color name="background_default">#FBD1D1</color>
+    <color name="defaultt">#979797</color>
+    <color name="red">#FF0000</color>
+    <color name="selectedIconColor">#FF3700B3</color>
+    <color name="defaultIconColor">#FF6200EE</color>
+    <color name="countTextColor">#65B3F1</color>
+    <color name="countBackgroundColor">#F45E0B</color>
+    <color name="circleColor">#2196F3</color>
+    <color name="backgroundBottomColor">#FFFFFF</color>
+    <color name="shadowColor">#DF2196F3</color>
+<!--    #c2b1f5-->
+
+
+</resources>

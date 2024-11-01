@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen_chinh"
+    tools:context=".View.Recharge_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:contentPadding="15dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textviewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tiền cần thanh toán: "
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtGoiYTien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#F62727"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/editNapTien"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:drawableStart="@drawable/icon_cong_no"
+                        android:hint="Nhập số tiền"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:backgroundTintMode="@color/white"
+                        android:elevation="10dp"/>
+                </TableRow>
+
+                <Spinner
+                    android:id="@+id/spinner_payment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/bank_transfer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/edit_text_bank_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Số tài khoản ngân hàng"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:layout_marginBottom="16dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tên ngân hàng"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:layout_marginBottom="16dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_bank_branch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Chi nhánh ngân hàng"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_edittext_states"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnNapTien"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="Nạp tiền"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btnQuayLaiMHNap"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="Quay lại"
+                android:textSize="20sp"/>
+        </TableRow>
+    </LinearLayout>
+</FrameLayout>
