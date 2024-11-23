@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HaUI_Android_N16_Manager_Account"
+rootProject.name = "android_n5_manager_account"
 include ':app'

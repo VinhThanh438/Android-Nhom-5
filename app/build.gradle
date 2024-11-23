@@ -8,11 +8,11 @@ android {
         viewBinding = true
     }
 
-    namespace 'ninhduynhat.com.haui_android_n16_manager_account'
+    namespace 'ninhduynhat.com.android_n5_manager_account'
     compileSdk 34
 
     defaultConfig {
-        applicationId "ninhduynhat.com.haui_android_n16_manager_account"
+        applicationId "ninhduynhat.com.android_n5_manager_account"
         minSdk 27
         targetSdk 34
         versionCode 1
