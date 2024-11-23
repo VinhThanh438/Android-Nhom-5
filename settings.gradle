@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "android_n5_manager_account"
+rootProject.name = "nhom5.android_n5_manager_account"
 include ':app'
