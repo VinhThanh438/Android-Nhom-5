@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/holo_blue_dark"> <!-- Thay đổi màu nền -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/navigation_statistical"
+        android:icon="@drawable/icon_thongke"
+        android:title="Thống kê" />
+    <item
+        android:id="@+id/navigation_plan"
+        android:icon="@drawable/icon_kehoach"
+        android:title="Kế hoạch" />
+    <item
+        android:id="@+id/navigation_register"
+        android:icon="@drawable/icon_dangky_mon_hoc"
+        android:title="Đăng ký" />
+    <item
+        android:id="@+id/navigation_cong_no"
+        android:icon="@drawable/icon_cong_no_2"
+        android:title="Công nợ" />
+</menu>

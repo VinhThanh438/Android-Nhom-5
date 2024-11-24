@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen_chinh"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.HomeFragment"
+    android:orientation="vertical">
+    <TableRow
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/bo_goc_tt_ca_nhan"
+        android:layout_marginTop="@dimen/size10dp"
+        android:id="@+id/thongtincanhan"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:paddingLeft="@dimen/size10dp"
+        android:paddingRight="@dimen/size10dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="@dimen/size10dp"
+            android:id="@+id/home_imgAvartar"
+            android:src="@drawable/anh_android"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/the_thongtin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_txtHello"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="Hello!" />
+
+            <TextView
+                android:id="@+id/home_txtTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Nguyễn Văn Bộ" />
+            <TextView
+                android:id="@+id/soduhientai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Số dư 1.000.000" />
+        </LinearLayout>
+
+    </TableRow>
+    <ScrollView
+        android:layout_below="@+id/thongtincanhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:id="@+id/lichthuongngay"
+                android:layout_below="@+id/thongtincanhan"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/size10dp"
+                    android:layout_marginEnd="@dimen/size10dp"
+                    android:background="@drawable/bo_goc_tt_ca_nhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:backgroundTint="#9AD2FF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="2dp">
+
+                    <CalendarView
+                        android:id="@+id/calendar_view_calendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/calendar_bg_lich"
+                        android:weekSeparatorLineColor="#4D7DCF" />
+
+                </androidx.cardview.widget.CardView>
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/lichthuongngay"
+                android:id="@+id/rcl_Chi_Phi"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/xanh"
+        />
+
+</RelativeLayout>

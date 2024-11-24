@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xanh"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".View.Quen_Mat_Khau">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_background_login"
+        android:layout_height="460dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_ten_dangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="@string/username"
+            android:textColorHint="@color/gray"
+            android:padding="@dimen/size10dp"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/icon_username"
+            android:drawablePadding="@dimen/size10dp"
+            android:drawableTint="@color/gray"
+
+            />
+
+        <EditText
+            android:id="@+id/edt_MatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Mật khẩu mới"
+            android:textColorHint="@color/gray"
+            android:padding="@dimen/size10dp"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/size10dp"
+            android:drawableTint="@color/gray"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/edt_XacNhanMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Xác nhận mật khẩu mới"
+            android:textColorHint="@color/gray"
+            android:padding="@dimen/size10dp"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/size10dp"
+            android:drawableTint="@color/gray"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/btn_QuenMK"
+            android:layout_width="150dp"
+            android:text="Xác nhận"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/xanh"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
