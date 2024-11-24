@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="12dp"
-        android:text="Thêm chi phí"
+        android:text="Sửa chi phí"
         android:textColor="@color/circleColor"
         android:textSize="20sp"
         android:textStyle="bold" />
